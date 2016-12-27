@@ -1,0 +1,13 @@
+language: node_js
+branches:
+  only:
+    - master
+node_js:
+  - "6"
+env:
+  global:
+    - NODE_ENV="test"
+install:
+  - npm install 
+script:
+  - npm test -- --coverage
